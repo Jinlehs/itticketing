@@ -1,0 +1,53 @@
+<div class="container">
+    
+    <router-outlet></router-outlet>
+   
+    <div class="body">
+        
+
+        <app-dialog *ngIf="generalService.showDialog" (parentFunction)="parentFunction($event)"></app-dialog>
+        
+        <!--<div *ngFor="let person of people">
+            {{person.name}} {{person.age}} 
+        </div>-->
+        
+        <!--<p *ngFor="let item of itemList">
+        {{item}}
+        </p>-->
+        
+        <!-- Table of tickets -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Request/Issue</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr *ngFor="let item of itemList">
+                    <td>{{item.name}}</td>
+                    <td>{{item.desc}}</td>
+                    
+                    <td>
+                        <button type="button" class="editbtn"
+                        data-toggle="modal" data-target="#exampleModal"
+                        data-backdrop="static" data-keyboard="false">
+                            Edit
+                        </button>
+                        <button type="button" class="resolvebtn" (click)="resolveTicket()">
+                            Resolve
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+   
+    </div>
+    
+
+</div>
+
+
+

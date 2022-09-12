@@ -1,0 +1,60 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    background: #303051;
+    color:aliceblue;
+    overflow: hidden; 
+}
+
+.innerheader{
+    width: 1000px; 
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #303051;
+    position: relative; 
+}
+
+.body{
+    padding: 10px;
+}
+
+/*button CSS*/
+
+.submitButton{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background:#303051;
+    color:white;
+    padding:5px;
+}
+
+
+/*table CSS*/
+table, th, td { 
+    border:2px solid #303051;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    text-align: left;
+    background-color: #303051;
+    color: white;
+}
+

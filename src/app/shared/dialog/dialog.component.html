@@ -1,0 +1,25 @@
+<div id="overlay" (click)="generalService.showDialog=false"></div>
+
+
+<div id="container">
+
+    <div id="header">
+        Submit Ticket
+        <button class="cancel" (click)="generalService.showDialog=false">exit</button>
+    </div>
+    <div id="actions">
+        
+        
+    </div>
+    <div class="menu-container">
+        <div class ="menu-toggler" (click) = "toggleMenu()">Click me for user dropdown</div>
+        <select class = "menu" *ngIf="isMenuOpened" (change)="selectedChangeHandler($event)">
+            <option *ngFor="let user of userList; let i = index" class = "menu-item">
+                 {{user.UserName}}
+            </option>
+        </select><br>
+        <textarea class = "input" type="text" placeholder="request/issue" #box></textarea> <br>
+        <button class = "issueButton"(click)="getInput(box.value)"(click)="sendData(selected,box.value)">submit</button>
+    </div>
+    
+</div>
