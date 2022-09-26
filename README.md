@@ -1,5 +1,7 @@
 # Itticketing
 
+Simple IT ticketing web application in Angular to familiarize myself with the Angular Framework.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
 ## Development server
